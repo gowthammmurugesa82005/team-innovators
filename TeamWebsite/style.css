@@ -1,0 +1,141 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0f2027;
+  color: #eaeaea;
+  line-height: 1.9;
+}
+
+/* HEADER */
+.header-bar {
+  background: linear-gradient(90deg, #1d2671, #c33764);
+}
+.header-title {
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.header-icon {
+  color: rgba(255,255,255,0.8);
+  font-size: 22px;
+}
+.nav-space {
+  height: 80px;
+}
+
+/* AURORA ANIMATION */
+.aurora {
+  background: linear-gradient(
+    270deg,
+    #ff0080,
+    #7928ca,
+    #2afadf,
+    #ff8c00
+  );
+  background-size: 600% 600%;
+  animation: auroraMove 8s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes auroraMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+ .aurora{
+    padding-bottom: 1.0rem;
+}
+/* SUB HEADINGS */
+.gradient-text {
+  background: linear-gradient(90deg, #ffb347, #ffcc33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SECTIONS */
+section {
+  padding: 90px 0;
+}
+.section-desc{
+    padding-top: 0.7rem;
+    font-style: italic;
+}
+.team-section {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+.intro-section {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+.project-section {
+  background: linear-gradient(135deg, #232526, #414345);
+}
+.contact-section {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+}
+
+/* TEXT */
+.content-text {
+  max-width: 1100px;
+  text-align: justify;
+  color: #e0e0e0;
+}
+
+/* TEAM CARDS */
+.team-card {
+  background: linear-gradient(135deg, #2c2c54, #40407a);
+  padding: 35px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.45);
+  transition: transform 0.4s;
+}
+.team-card:hover {
+  transform: translateY(-12px);
+}
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+.role {
+  color: #dcdcdc;
+}
+
+/* TECHNOLOGY CARDS */
+.tech-card {
+  padding: 25px;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: transform 0.35s, box-shadow 0.35s;
+}
+.tech-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+}
+.tech1 { background: linear-gradient(135deg, #11998e, #38ef7d); color:#000; }
+.tech2 { background: linear-gradient(135deg, #396afc, #2948ff); }
+.tech3 { background: linear-gradient(135deg, #7f00ff, #e100ff); }
+.tech4 { background: linear-gradient(135deg, #ff512f, #dd2476); }
+
+/* PROJECT IMAGES */
+.project-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+  .team-photo {
+    width: 130px;
+    height: 130px;
+  }
+}
+.emailtoTeam{
+    padding-top: 0.5rem;
+    font-style: italic;
+}

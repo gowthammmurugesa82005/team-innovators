@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Team Innovators</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<nav class="navbar fixed-top header-bar">
+  <div class="container justify-content-center align-items-center gap-3">
+    <i class="fa-solid fa-users header-icon"></i>
+    <span class="navbar-brand header-title">TEAM INNOVATORS</span>
+  </div>
+</nav>
+<div class="nav-space"></div>
+
+<!-- TEAM -->
+<section class="team-section">
+  <div class="container">
+    <h2 class="section-title aurora">Meet Our Team</h2>
+    <p class="section-desc">
+      "Passionate minds united to create impactful technology."
+    </p>
+
+    <div class="row g-4 mt-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="team-card">
+          <img src="member1.jpeg" class="team-photo">
+          <h5>Darshan S</h5>
+          <p class="role">Team Lead</p>
+          <a href="https://www.linkedin.com/in/darshan2426?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="team-card">
+          <img src="member2.jpeg" class="team-photo">
+          <h5>Gowtham M</h5>
+          <p class="role">Developer</p>
+          <a href="https://www.linkedin.com/in/gowtham-murugesan-355775290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-card">
+          <img src="member3.jpeg" class="team-photo">
+          <h5>Baala Aravinth SJ</h5>
+          <p class="role">Designer</p>
+          <a href="https://www.linkedin.com/in/baala-aravinth-sj-8b2803290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro-section">
+  <div class="container">
+    <h2 class="section-title aurora">Introduction</h2>
+    <p class="content-text">
+      <!-- YOUR FULL INTRO CONTENT – UNCHANGED -->
+      We are a highly motivated trio of Electronics and Communication Engineering students from Sri Krishna College of Technology, united by a shared passion for bridging the gap between theoretical hardware concepts and real-world silicon solutions. Comprised of Gowtham, Darshan, and Baala Aravinth, our team functions as a multi-disciplinary unit dedicated to excellence in the domains of VLSI, Embedded Systems, and the Internet of Things (IoT).
+
+      Our technical identity is rooted in a deep understanding of both Analog and Digital Electronics. We don't just study circuits; we aim to optimize them. With a core focus on the hardware abstraction layer, we possess a robust command over Verilog HDL, allowing us to translate complex architectural requirements into efficient RTL designs. Our collective curiosity extends from the intricacies of transistor-level analog design to the high-level orchestration required for large-scale FPGA-based prototyping.
+
+      What sets our team apart is our hands-on experience in navigating the full design lifecycle. We have successfully executed projects that integrate Embedded C programming with sophisticated hardware interfaces, creating seamless IoT ecosystems that solve tangible problems. Our work with FPGA platforms has sharpened our ability to perform hardware acceleration and timing analysis, ensuring that our designs are not only functional but industry-ready.
+
+      Beyond our technical stack, we pride ourselves on our collaborative synergy. Gowtham brings a meticulous approach to system architecture and digital logic; Darshan excels in hardware-software integration and embedded firmware; and Baala Aravinth focuses on circuit optimization and the nuances of analog design. Together, we represent a blend of innovation and engineering discipline.
+
+      We are currently seeking opportunities to apply our skills in VLSI Design, RTL Verification, and Embedded Product Development. We are driven by the challenge of shrinking technology while expanding its capabilities, and we are eager to contribute to the next generation of semiconductor and electronic innovations. Whether it is optimizing a power-efficient analog block or deploying an intelligent IoT gateway, we deliver solutions backed by technical rigor and a commitment to quality.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section class="project-section">
+  <div class="container">
+    <h2 class="section-title aurora">Project Details</h2>
+
+    <h5 class="sub-heading gradient-text">Project Overview</h5>
+    <p class="content-text">
+      This project focuses on the development of an automated system for detecting cardiac arrhythmias using FPGA technology. By implementing detection algorithms on a Field Programmable Gate Array, we achieve high-speed, real-time processing of ECG signals. The system is designed to identify irregularities in heart rhythm by analyzing the QRS complex, providing a portable and efficient solution for continuous cardiac monitoring without the latency issues of software-based systems.   </p>
+
+    <h5 class="sub-heading gradient-text">Problem Statement & Objectives</h5>
+    <p class="content-text">
+      The primary challenge addressed is the need for immediate, reliable detection of life-threatening heart conditions in a wearable format. Traditional methods often rely on PC-based analysis which isn't always portable, or microcontrollers that may struggle with the computational load of complex filtering.<br>
+
+<b>1.</b> To design a hardware-efficient QRS detection algorithm.<br>
+
+<b>2.</b> To implement the Pan-Tompkins or similar threshold-based logic in Verilog HDL.<br>
+
+<b>3.</b> To ensure the system can distinguish between Normal Sinus Rhythm and various Arrhythmias (like Tachycardia or Bradycardia) in real-time.
+    </p>
+
+    <h5 class="sub-heading gradient-text">Tech Stack Used</h5>
+
+    <div class="row g-4 mt-3">
+      <div class="col-md-6">
+        <div class="tech-card tech1">
+          <strong>Verilog HDL:</strong> Used for coding the digital logic, including the FIR filters and the integration-based detection logic.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="tech-card tech2">
+          <strong>Xilinx ISE/Vivado:</strong> The primary environment for synthesis, implementation, and generating the bitstream for the FPGA.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="tech-card tech3">
+          <strong>Spartan-3E FPGA:</strong> The target hardware used for physical verification and real-time signal input testing.
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="tech-card tech4">
+          <strong>MATLAB/Python:</strong> Employed for initial algorithm modeling and generating test vectors from the MIT-BIH database to verify the Verilog output.
+        </div>
+      </div>
+    </div>
+
+    <h5 class="sub-heading gradient-text mt-5">Features & Results</h5>
+    <p class="content-text">
+      The project resulted in a functional hardware prototype with the following outcomes:<br>
+
+<b>Digital Filtering:</b> Successfully implemented Low-Pass and High-Pass filters in hardware to remove baseline wander and powerline interference from the raw ECG.<br>
+
+<b>Real-Time Detection:</b> The system identifies R-peaks with high precision, calculating the heart rate (BPM) instantaneously.<br>
+
+<b>Resource Efficiency:</b> The design utilizes minimal FPGA slices, leaving room for additional features like data encryption or multi-lead analysis.<br>
+
+<b>Visual Feedback:</b> Integrated with an LCD or 7-segment display to show the detected heart rate and a status LED to indicate the detection of an arrhythmic event.  </p>
+
+    <div class="row g-4 mt-4">
+      <div class="col-6 col-md-3"><img src="proj1.jpeg" class="project-img"></div>
+      <div class="col-6 col-md-3"><img src="proj2.jpeg" class="project-img"></div>
+      <div class="col-6 col-md-3"><img src="proj3.jpeg" class="project-img"></div>
+      <div class="col-6 col-md-3"><img src="proj4.jpeg" class="project-img"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="container">
+    <h2 class="section-title aurora text-white">Contact Us</h2>
+    <p class="content-text text-white">
+      For collaboration or queries, feel free to connect with us, just an email away.<br></p>
+      <p class ="emailtoTeam">✉️<b>email to: </b>teaminnovators.gdb@gmail.com</p>
+    
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: false, mirror: true });
+</script>
+
+</body>
+</html>
